@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html{
+    font-family: 'Inter';
+}
+.body{
+    width: 684px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+.container {
+    margin-top: 10px;
+    background-color: #EEEEF0;
+    width: 570px;
+    height: 576px;
+    display: flex;
+    align-items: top;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+.title{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-container{
+    display: flex;
+    align-items: top;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+#taskInput{
+    width: 532px;
+    height: 63px;
+    border-radius: 8px;
+}
+
+.add_button{
+    color: white;
+    width: 66px;
+    height: 63px;
+    border: none;
+    background-color: #5016FF;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: end;
+    justify-content: end;
+}
+
+.add_button:hover{
+    background-color: #390fcc;
+}
+
+.task_list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task_item{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #EEEEF0;
+    border-radius: 1px;
+}
+
+.task_item.checked{
+    background-color: #dad9ff;
+}
+
+.task_text{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    width: 500px;
+    height: 50px;
+    background-color: white;
+}
+
+.task_checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .task_checkbox.checked {
+    background-color: #5016FF;
+  }
+  
+  .task_checkbox.checked::after {
+    content: '✓';
+    color: white;
+  }
+  
+  .task_delete {
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  }
